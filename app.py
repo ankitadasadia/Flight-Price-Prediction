@@ -12,7 +12,7 @@ import pandas as pd
 from flask_cors import cross_origin
 
 app=Flask(__name__)
-model=pickle.load(open("flight_rf.pkl", "rb"))
+model=pickle.load(open("flight_rf1.pkl", "rb"))
 
 @app.route("/")
 @cross_origin()
